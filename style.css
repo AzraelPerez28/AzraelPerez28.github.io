@@ -1,0 +1,110 @@
+/* Import Elegant Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Poem Font */
+.poem-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Section Styles */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Background Colors */
+.first-section { background-color: #c08552; }
+.section2 { background-color: #d81e5b; }
+.section3 { background-color: #402039; }
+.section4 { background-color: #d81e5b; }
+.section5 { background-color: #c08552; }
+.section6 { background-color: #402039; }
+.section7 { background-color: #b497d6; }
+
+/* Ribbon Shape */
+.ribbon {
+    position: absolute;
+    bottom: -1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d81e5b;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5rem 0.5rem;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Hover Effect */
+.ribbon:hover {
+    transform: translateX(-50%) translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust Ribbon Colors to Match Next Section */
+.section2 .ribbon { background: #402039; }
+.section3 .ribbon { background: #d81e5b; }
+.section4 .ribbon { background: #c08552; }
+.section5 .ribbon { background: #402039; }
+.section6 .ribbon { background: #b497d6; }
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Center all text properly in the last section */
+.section7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Styling for each line */
+.section7 h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0;
+}
+
+/* Right-align "your kinkin" */
+.section7 p {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
